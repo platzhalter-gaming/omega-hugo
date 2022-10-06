@@ -13,6 +13,10 @@
         transform: rotate(-90deg);
         top: 15px;
         right: 0;
+        background-color: $btn-color;
+		display: inline-block;
+		padding-left: 15px;
+		padding-right: 5px;
         @include desktop{
             position: relative;
             top: 0;
@@ -106,6 +110,10 @@
                 text-transform: capitalize;
                 font-size: 35px;
                 letter-spacing: 0;
+                background-color: $btn-color;
+			    display: inline-block;
+			    padding-left: 15px;
+			    padding-right: 15px;
             }
             p{
                 font-size: 18px;
@@ -113,6 +121,10 @@
                 letter-spacing: 1px;
                 font-weight: 600;
                 max-width: 420px;
+                background-color: $btn-color;
+			    display: inline-block;
+			    padding-left: 15px;
+			    padding-right: 15px;
             }
         }
     }

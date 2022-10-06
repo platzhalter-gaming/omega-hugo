@@ -6,7 +6,7 @@
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
             {{ if site.Params.logo }}
-            <img class="d-inline-block align-top" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}"> {{site.Title}}
+            <img class="d-inline-block align-top" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}"> <span>{{ site.Title }}</span>
             {{ else }}
             {{site.Title}}
             {{ end }}

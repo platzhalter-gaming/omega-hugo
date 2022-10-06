@@ -5,6 +5,13 @@
     @include mobile{
         font-size: 40px;
     }
+
+    span {
+        background-color: $btn-color;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 a.navbar-brand:hover {
     color: rgb(128, 125, 125);
