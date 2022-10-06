@@ -20,7 +20,7 @@
               <h3>{{ .content | markdownify }}</h3>
               {{ if .button.enable }}
               {{ with .button }}
-              <a href="{{ .link | absURL }}" class="hero-btn btn page-scroll">{{.label}}</a>
+              <a href="{{ .link }}" class="hero-btn btn page-scroll">{{.label}}</a>
               {{ end }}
               {{ end }}
             </div>
@@ -75,7 +75,7 @@
 
 {{ if site.Data.homepage.vision.enable }}
 {{ with site.Data.homepage.vision }}
-<section class="vision">
+<section class="vision" id="vision">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -197,10 +197,24 @@
 
 {{ if site.Data.homepage.call_to_action.enable }}
 {{ with site.Data.homepage.call_to_action }}
-<footer class="footer">
+<footer class="footer" id="cta">
 	<div class="call-to-action text-center">
 		<h2>{{ .title | markdownify }}</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          {{ .content | safeHTML | markdownify }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          {{ .content2 | safeHTML | markdownify }}
+        </div>
+      </div>
+    </div>
+    {{ if .button_label }}
 		<a href="{{.button_link | absURL }}">{{.button_label}}</a>
+    {{ end }}
 	</div>
 </footer>
 {{end}}

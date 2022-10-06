@@ -1,0 +1,11 @@
+.navbar-brand {
+    color: #fff;
+    font-size: 3.25rem;
+    font-weight: bold;
+    @include mobile{
+        font-size: 40px;
+    }
+}
+a.navbar-brand:hover {
+    color: rgb(128, 125, 125);
+}
